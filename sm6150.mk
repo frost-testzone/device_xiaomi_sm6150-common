@@ -100,6 +100,10 @@ PRODUCT_COPY_FILES += \
 
 $(call soong_config_set,camera,override_format_from_reserved,true)
 
+# DeviceAsWebcam
+PRODUCT_PACKAGES += \
+    DeviceAsWebcam
+
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
