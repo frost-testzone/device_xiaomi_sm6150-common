@@ -125,6 +125,10 @@ PRODUCT_COPY_FILES += \
 # Dolby
 $(call inherit-product, vendor/oneplus/dolby/dolby.mk)
 
+# Dolby Fix script
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/bin/init.dolby_fix.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.dolby_fix.sh
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
