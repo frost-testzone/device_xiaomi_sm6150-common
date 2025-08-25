@@ -44,6 +44,9 @@ BOARD_SUPPORTS_SOUND_TRIGGER := true
 TARGET_BOOTLOADER_BOARD_NAME := sm6150
 TARGET_NO_BOOTLOADER := true
 
+# Dolby
+include vendor/oneplus/dolby/BoardConfigDolby.mk
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
 
